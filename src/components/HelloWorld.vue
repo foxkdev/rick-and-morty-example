@@ -1,11 +1,14 @@
-<script setup>
-import { ref } from 'vue'
+<script>
 
-defineProps({
-  msg: String
-})
+export default {
+  props: ['msg'],
+  data() {
+    return {
+      count: 0
+    }
+  },
+}
 
-const count = ref(0)
 </script>
 
 <template>
